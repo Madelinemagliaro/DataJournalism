@@ -1,0 +1,66 @@
+TimePeriod,GeoType,GeoID,GeoRank,Geography,Number,Percent,
+2017-21,CDTA2020,501,7,Melrose-Mott Haven-Port Morris (CD 1),41 036,42.4,Bronx
+2017-21,CDTA2020,502,7,Longwood-Hunts Point (CD 2),17 447,32.6,Bronx
+2017-21,CDTA2020,503,7,Morrisania-Crotona Park East (CD 3),31 520,35.7,Bronx
+2017-21,CDTA2020,504,7,Highbridge-Concourse (CD 4),49 561,32.3,Bronx
+2017-21,CDTA2020,505,7,Morris Heights-Mount Hope (CD 5),44 753,32.6,Bronx
+2017-21,CDTA2020,506,7,Tremont-Belmont-West Farms (CD 6),32 690,39.5,Bronx
+2017-21,CDTA2020,507,7,Fordham-Bedford Park-Norwood (CD 7),37 879,26.4,Bronx
+2017-21,CDTA2020,508,7,Riverdale-Kingsbridge-Marble Hill (CD 8),18 752,18,Bronx
+2017-21,CDTA2020,509,7,Soundview-Parkchester (CD 9),44 131,25.4,Bronx
+2017-21,CDTA2020,510,7,Co-op City-Throgs Neck (CD 10),16 501,13,Bronx
+2017-21,CDTA2020,511,7,Pelham Parkway-Morris Park (CD 11),20 134,17.1,Bronx
+2017-21,CDTA2020,512,7,Wakefield-Williamsbridge-Eastchester (CD 12),28 887,17.3,Bronx
+2017-21,CDTA2020,4701,7,Williamsburg-Greenpoint (CD 1),50 578,25.2,Brooklyn
+2017-21,CDTA2020,4702,7,Downtown Brooklyn-Fort Greene (CD 2),15 638,13,Brooklyn
+2017-21,CDTA2020,4703,7,Bedford-Stuyvesant (CD 3),43 548,24.1,Brooklyn
+2017-21,CDTA2020,4704,7,Bushwick (CD 4),26 629,22.6,Brooklyn
+2017-21,CDTA2020,4705,7,East New York-Cypress Hills (CD 5),49 149,24.2,Brooklyn
+2017-21,CDTA2020,4706,7,Park Slope-Carroll Gardens (CD 6),12 092,9.9,Brooklyn
+2017-21,CDTA2020,4707,7,Sunset Park-Windsor Terrace (CD 7),21 012,17.1,Brooklyn
+2017-21,CDTA2020,4708,7,Crown Heights (North) (CD 8),19 449,17.6,Brooklyn
+2017-21,CDTA2020,4709,7,Crown Heights (South) (CD 9),16 523,16.8,Brooklyn
+2017-21,CDTA2020,4710,7,Bay Ridge-Dyker Heights (CD 10),17 753,13.8,Brooklyn
+2017-21,CDTA2020,4711,7,Bensonhurst-Bath Beach (CD 11),33 755,17.3,Brooklyn
+2017-21,CDTA2020,4712,7,Borough Park-Kensington (CD 12),50 367,26.3,Brooklyn
+2017-21,CDTA2020,4713,7,Coney Island-Brighton Beach (CD 13),26 992,24.3,Brooklyn
+2017-21,CDTA2020,4714,7,Flatbush-Midwood (CD 14),24 255,14.7,Brooklyn
+2017-21,CDTA2020,4715,7,Sheepshead Bay-Gravesend (East) (CD 15),24 248,14.8,Brooklyn
+2017-21,CDTA2020,4716,7,Ocean Hill-Brownsville (CD 16),29 051,32.7,Brooklyn
+2017-21,CDTA2020,4717,7,East Flatbush (CD 17),22 246,14.1,Brooklyn
+2017-21,CDTA2020,4718,7,Canarsie-Flatlands (CD 18),21 528,10.4,Brooklyn
+2017-21,CDTA2020,6101,7,Financial District-Tribeca (CD 1),3 376,4.9,Manhattan
+2017-21,CDTA2020,6102,7,Greenwich Village-SoHo (CD 2),6 962,8.4,Manhattan
+2017-21,CDTA2020,6103,7,Lower East Side-Chinatown (CD 3),40 335,26.7,Manhattan
+2017-21,CDTA2020,6104,7,Chelsea-Hell's Kitchen (CD 4),14 839,12.7,Manhattan
+2017-21,CDTA2020,6105,7,Midtown-Flatiron-Union Square (CD 5),4 798,10.3,Manhattan
+2017-21,CDTA2020,6106,7,East Midtown-Murray Hill (CD 6),12 074,8.4,Manhattan
+2017-21,CDTA2020,6107,7,Upper West Side (CD 7),23 215,10.6,Manhattan
+2017-21,CDTA2020,6108,7,Upper East Side-Roosevelt Island (CD 8),14 462,6.7,Manhattan
+2017-21,CDTA2020,6109,7,Morningside Heights-Hamilton Heights (CD 9),25 359,24.1,Manhattan
+2017-21,CDTA2020,6110,7,Harlem (CD 10),30 236,22.7,Manhattan
+2017-21,CDTA2020,6111,7,East Harlem (CD 11),37 227,30.7,Manhattan
+2017-21,CDTA2020,6112,7,Washington Heights-Inwood (CD 12),34 752,16.9,Manhattan
+2017-21,CDTA2020,8101,7,Astoria-Queensbridge (CD 1),20 112,11.7,Queens
+2017-21,CDTA2020,8102,7,Long Island City-Sunnyside-Woodside (CD 2),10 090,8.3,Queens
+2017-21,CDTA2020,8103,7,Jackson Heights-East Elmhurst (CD 3),22 036,13.8,Queens
+2017-21,CDTA2020,8104,7,Elmhurst-Corona (CD 4),24 366,13.9,Queens
+2017-21,CDTA2020,8105,7,Ridgewood-Maspeth-Middle Village (CD 5),18 891,9.9,Queens
+2017-21,CDTA2020,8106,7,Forest Hills-Rego Park (CD 6),10 006,8.2,Queens
+2017-21,CDTA2020,8107,7,Flushing-Murray Hill-Whitestone (CD 7),35 685,14.3,Queens
+2017-21,CDTA2020,8108,7,Fresh Meadows-Hillcrest-Briarwood (CD 8),18 864,12.2,Queens
+2017-21,CDTA2020,8109,7,Kew Gardens-Richmond Hill-Woodhaven (CD 9),16 779,11.1,Queens
+2017-21,CDTA2020,8110,7,South Ozone Park-Howard Beach (CD 10),13 822,9.7,Queens
+2017-21,CDTA2020,8111,7,Auburndale-Bayside-Douglaston (CD 11),10 278,8.2,Queens
+2017-21,CDTA2020,8112,7,Jamaica-St. Albans-Hollis (CD 12),29 988,11.6,Queens
+2017-21,CDTA2020,8113,7,Queens Village-Bellerose-Rosedale (CD 13),15 538,7.4,Queens
+2017-21,CDTA2020,8114,7,The Rockaways (CD 14),23 622,18,Queens
+2017-21,CDTA2020,8501,7,North Shore (CD 1),25 657,14.5,Statan Island
+2017-21,CDTA2020,8502,7,Mid-Island (CD 2),14 428,10.2,Statan Island
+2017-21,CDTA2020,8503,7,South Shore (CD 3),10 151,6,Statan Island
+2017-21,Borough,1,1,Bronx,379 954,26.5,
+2017-21,Borough,2,1,Brooklyn,504 813,18.8,
+2017-21,Borough,3,1,Manhattan,252 233,15.6,
+2017-21,Borough,4,1,Queens,270 107,11.4,
+2017-21,Borough,5,1,Staten Island,50 282,10.3,
+2017-21,Citywide,1,0,New York City,1 457 389,17,

@@ -1,266 +1,278 @@
 {
-    "Geography": {
-        "value": "Number",
-        "percent": "Percent"
-    },
-    "Melrose-Mott Haven-Port Morris (CD 1)": {
-        "value": "41 036",
-        "percent": "42.4"
-    },
-    "Longwood-Hunts Point (CD 2)": {
-        "value": "17 447",
-        "percent": "32.6"
-    },
-    "Morrisania-Crotona Park East (CD 3)": {
-        "value": "31 520",
-        "percent": "35.7"
-    },
-    "Highbridge-Concourse (CD 4)": {
-        "value": "49 561",
-        "percent": "32.3"
-    },
-    "Morris Heights-Mount Hope (CD 5)": {
-        "value": "44 753",
-        "percent": "32.6"
-    },
-    "Tremont-Belmont-West Farms (CD 6)": {
-        "value": "32 690",
-        "percent": "39.5"
-    },
-    "Fordham-Bedford Park-Norwood (CD 7)": {
-        "value": "37 879",
-        "percent": "26.4"
-    },
-    "Riverdale-Kingsbridge-Marble Hill (CD 8)": {
-        "value": "18 752",
-        "percent": "18"
-    },
-    "Soundview-Parkchester (CD 9)": {
-        "value": "44 131",
-        "percent": "25.4"
-    },
-    "Co-op City-Throgs Neck (CD 10)": {
-        "value": "16 501",
-        "percent": "13"
-    },
-    "Pelham Parkway-Morris Park (CD 11)": {
-        "value": "20 134",
-        "percent": "17.1"
-    },
-    "Wakefield-Williamsbridge-Eastchester (CD 12)": {
-        "value": "28 887",
-        "percent": "17.3"
-    },
-    "Williamsburg-Greenpoint (CD 1)": {
-        "value": "50 578",
-        "percent": "25.2"
-    },
-    "Downtown Brooklyn-Fort Greene (CD 2)": {
-        "value": "15 638",
-        "percent": "13"
-    },
-    "Bedford-Stuyvesant (CD 3)": {
-        "value": "43 548",
-        "percent": "24.1"
-    },
-    "Bushwick (CD 4)": {
-        "value": "26 629",
-        "percent": "22.6"
-    },
-    "East New York-Cypress Hills (CD 5)": {
-        "value": "49 149",
-        "percent": "24.2"
-    },
-    "Park Slope-Carroll Gardens (CD 6)": {
-        "value": "12 092",
-        "percent": "9.9"
-    },
-    "Sunset Park-Windsor Terrace (CD 7)": {
-        "value": "21 012",
-        "percent": "17.1"
-    },
-    "Crown Heights (North) (CD 8)": {
-        "value": "19 449",
-        "percent": "17.6"
-    },
-    "Crown Heights (South) (CD 9)": {
-        "value": "16 523",
-        "percent": "16.8"
-    },
-    "Bay Ridge-Dyker Heights (CD 10)": {
-        "value": "17 753",
-        "percent": "13.8"
-    },
-    "Bensonhurst-Bath Beach (CD 11)": {
-        "value": "33 755",
-        "percent": "17.3"
-    },
-    "Borough Park-Kensington (CD 12)": {
-        "value": "50 367",
-        "percent": "26.3"
-    },
-    "Coney Island-Brighton Beach (CD 13)": {
-        "value": "26 992",
-        "percent": "24.3"
-    },
-    "Flatbush-Midwood (CD 14)": {
-        "value": "24 255",
-        "percent": "14.7"
-    },
-    "Sheepshead Bay-Gravesend (East) (CD 15)": {
-        "value": "24 248",
-        "percent": "14.8"
-    },
-    "Ocean Hill-Brownsville (CD 16)": {
-        "value": "29 051",
-        "percent": "32.7"
-    },
-    "East Flatbush (CD 17)": {
-        "value": "22 246",
-        "percent": "14.1"
-    },
-    "Canarsie-Flatlands (CD 18)": {
-        "value": "21 528",
-        "percent": "10.4"
-    },
-    "Financial District-Tribeca (CD 1)": {
-        "value": "3 376",
-        "percent": "4.9"
-    },
-    "Greenwich Village-SoHo (CD 2)": {
-        "value": "6 962",
-        "percent": "8.4"
-    },
-    "Lower East Side-Chinatown (CD 3)": {
-        "value": "40 335",
-        "percent": "26.7"
-    },
-    "Chelsea-Hell's Kitchen (CD 4)": {
-        "value": "14 839",
-        "percent": "12.7"
-    },
-    "Midtown-Flatiron-Union Square (CD 5)": {
-        "value": "4 798",
-        "percent": "10.3"
-    },
-    "East Midtown-Murray Hill (CD 6)": {
-        "value": "12 074",
-        "percent": "8.4"
-    },
-    "Upper West Side (CD 7)": {
-        "value": "23 215",
-        "percent": "10.6"
-    },
-    "Upper East Side-Roosevelt Island (CD 8)": {
-        "value": "14 462",
-        "percent": "6.7"
-    },
-    "Morningside Heights-Hamilton Heights (CD 9)": {
-        "value": "25 359",
-        "percent": "24.1"
-    },
-    "Harlem (CD 10)": {
-        "value": "30 236",
-        "percent": "22.7"
-    },
-    "East Harlem (CD 11)": {
-        "value": "37 227",
-        "percent": "30.7"
-    },
-    "Washington Heights-Inwood (CD 12)": {
-        "value": "34 752",
-        "percent": "16.9"
-    },
-    "Astoria-Queensbridge (CD 1)": {
-        "value": "20 112",
-        "percent": "11.7"
-    },
-    "Long Island City-Sunnyside-Woodside (CD 2)": {
-        "value": "10 090",
-        "percent": "8.3"
-    },
-    "Jackson Heights-East Elmhurst (CD 3)": {
-        "value": "22 036",
-        "percent": "13.8"
-    },
-    "Elmhurst-Corona (CD 4)": {
-        "value": "24 366",
-        "percent": "13.9"
-    },
-    "Ridgewood-Maspeth-Middle Village (CD 5)": {
-        "value": "18 891",
-        "percent": "9.9"
-    },
-    "Forest Hills-Rego Park (CD 6)": {
-        "value": "10 006",
-        "percent": "8.2"
-    },
-    "Flushing-Murray Hill-Whitestone (CD 7)": {
-        "value": "35 685",
-        "percent": "14.3"
-    },
-    "Fresh Meadows-Hillcrest-Briarwood (CD 8)": {
-        "value": "18 864",
-        "percent": "12.2"
-    },
-    "Kew Gardens-Richmond Hill-Woodhaven (CD 9)": {
-        "value": "16 779",
-        "percent": "11.1"
-    },
-    "South Ozone Park-Howard Beach (CD 10)": {
-        "value": "13 822",
-        "percent": "9.7"
-    },
-    "Auburndale-Bayside-Douglaston (CD 11)": {
-        "value": "10 278",
-        "percent": "8.2"
-    },
-    "Jamaica-St. Albans-Hollis (CD 12)": {
-        "value": "29 988",
-        "percent": "11.6"
-    },
-    "Queens Village-Bellerose-Rosedale (CD 13)": {
-        "value": "15 538",
-        "percent": "7.4"
-    },
-    "The Rockaways (CD 14)": {
-        "value": "23 622",
-        "percent": "18"
-    },
-    "North Shore (CD 1)": {
-        "value": "25 657",
-        "percent": "14.5"
-    },
-    "Mid-Island (CD 2)": {
-        "value": "14 428",
-        "percent": "10.2"
-    },
-    "South Shore (CD 3)": {
-        "value": "10 151",
-        "percent": "6"
-    },
-    "Bronx": {
-        "value": "379 954",
-        "percent": "26.5"
-    },
-    "Brooklyn": {
-        "value": "504 813",
-        "percent": "18.8"
-    },
-    "Manhattan": {
-        "value": "252 233",
-        "percent": "15.6"
-    },
-    "Queens": {
-        "value": "270 107",
-        "percent": "11.4"
-    },
-    "Staten Island": {
-        "value": "50 282",
-        "percent": "10.3"
-    },
-    "New York City": {
-        "value": "1 457 389",
-        "percent": "17"
+    "borough": {
+        "Bronx": {
+            "value": "379 954",
+            "percent": "26.5"
+        },
+        "Brooklyn": {
+            "value": "504 813",
+            "percent": "18.8"
+        },
+        "Manhattan": {
+            "value": "252 233",
+            "percent": "15.6"
+        },
+        "Queens": {
+            "value": "270 107",
+            "percent": "11.4"
+        },
+        "Staten Island": {
+            "value": "50 282",
+            "percent": "10.3"
+        }
+    },
+    "Districts":{
+        "Bronx-Distr": {
+            "Melrose-Mott Haven-Port Morris (CD 1)": {
+                "value": "41 036",
+                "percent": "42.4"
+            },
+            "Longwood-Hunts Point (CD 2)": {
+                "value": "17 447",
+                "percent": "32.6"
+            },
+            "Morrisania-Crotona Park East (CD 3)": {
+                "value": "31 520",
+                "percent": "35.7"
+            },
+            "Highbridge-Concourse (CD 4)": {
+                "value": "49 561",
+                "percent": "32.3"
+            },
+            "Morris Heights-Mount Hope (CD 5)": {
+                "value": "44 753",
+                "percent": "32.6"
+            },
+            "Tremont-Belmont-West Farms (CD 6)": {
+                "value": "32 690",
+                "percent": "39.5"
+            },
+            "Fordham-Bedford Park-Norwood (CD 7)": {
+                "value": "37 879",
+                "percent": "26.4"
+            },
+            "Riverdale-Kingsbridge-Marble Hill (CD 8)": {
+                "value": "18 752",
+                "percent": "18"
+            },
+            "Soundview-Parkchester (CD 9)": {
+                "value": "44 131",
+                "percent": "25.4"
+            },
+            "Co-op City-Throgs Neck (CD 10)": {
+                "value": "16 501",
+                "percent": "13"
+            },
+            "Pelham Parkway-Morris Park (CD 11)": {
+                "value": "20 134",
+                "percent": "17.1"
+            },
+            "Wakefield-Williamsbridge-Eastchester (CD 12)": {
+                "value": "28 887",
+                "percent": "17.3"
+            }
+        },
+        "Brooklyn-distr": {
+            "Williamsburg-Greenpoint (CD 1)": {
+                "value": "50 578",
+                "percent": "25.2"
+            },
+            "Downtown Brooklyn-Fort Greene (CD 2)": {
+                "value": "15 638",
+                "percent": "13"
+            },
+            "Bedford-Stuyvesant (CD 3)": {
+                "value": "43 548",
+                "percent": "24.1"
+            },
+            "Bushwick (CD 4)": {
+                "value": "26 629",
+                "percent": "22.6"
+            },
+            "East New York-Cypress Hills (CD 5)": {
+                "value": "49 149",
+                "percent": "24.2"
+            },
+            "Park Slope-Carroll Gardens (CD 6)": {
+                "value": "12 092",
+                "percent": "9.9"
+            },
+            "Sunset Park-Windsor Terrace (CD 7)": {
+                "value": "21 012",
+                "percent": "17.1"
+            },
+            "Crown Heights (North) (CD 8)": {
+                "value": "19 449",
+                "percent": "17.6"
+            },
+            "Crown Heights (South) (CD 9)": {
+                "value": "16 523",
+                "percent": "16.8"
+            },
+            "Bay Ridge-Dyker Heights (CD 10)": {
+                "value": "17 753",
+                "percent": "13.8"
+            },
+            "Bensonhurst-Bath Beach (CD 11)": {
+                "value": "33 755",
+                "percent": "17.3"
+            },
+            "Borough Park-Kensington (CD 12)": {
+                "value": "50 367",
+                "percent": "26.3"
+            },
+            "Coney Island-Brighton Beach (CD 13)": {
+                "value": "26 992",
+                "percent": "24.3"
+            },
+            "Flatbush-Midwood (CD 14)": {
+                "value": "24 255",
+                "percent": "14.7"
+            },
+            "Sheepshead Bay-Gravesend (East) (CD 15)": {
+                "value": "24 248",
+                "percent": "14.8"
+            },
+            "Ocean Hill-Brownsville (CD 16)": {
+                "value": "29 051",
+                "percent": "32.7"
+            },
+            "East Flatbush (CD 17)": {
+                "value": "22 246",
+                "percent": "14.1"
+            },
+            "Canarsie-Flatlands (CD 18)": {
+                "value": "21 528",
+                "percent": "10.4"
+            }
+        },
+        "Manhattan-distr": {
+            "Financial District-Tribeca (CD 1)": {
+                "value": "3 376",
+                "percent": "4.9"
+            },
+            "Greenwich Village-SoHo (CD 2)": {
+                "value": "6 962",
+                "percent": "8.4"
+            },
+            "Lower East Side-Chinatown (CD 3)": {
+                "value": "40 335",
+                "percent": "26.7"
+            },
+            "Chelsea-Hell's Kitchen (CD 4)": {
+                "value": "14 839",
+                "percent": "12.7"
+            },
+            "Midtown-Flatiron-Union Square (CD 5)": {
+                "value": "4 798",
+                "percent": "10.3"
+            },
+            "East Midtown-Murray Hill (CD 6)": {
+                "value": "12 074",
+                "percent": "8.4"
+            },
+            "Upper West Side (CD 7)": {
+                "value": "23 215",
+                "percent": "10.6"
+            },
+            "Upper East Side-Roosevelt Island (CD 8)": {
+                "value": "14 462",
+                "percent": "6.7"
+            },
+            "Morningside Heights-Hamilton Heights (CD 9)": {
+                "value": "25 359",
+                "percent": "24.1"
+            },
+            "Harlem (CD 10)": {
+                "value": "30 236",
+                "percent": "22.7"
+            },
+            "East Harlem (CD 11)": {
+                "value": "37 227",
+                "percent": "30.7"
+            },
+            "Washington Heights-Inwood (CD 12)": {
+                "value": "34 752",
+                "percent": "16.9"
+            }
+        },
+        "Queens-distr": {
+            "Astoria-Queensbridge (CD 1)": {
+                "value": "20 112",
+                "percent": "11.7"
+            },
+            "Long Island City-Sunnyside-Woodside (CD 2)": {
+                "value": "10 090",
+                "percent": "8.3"
+            },
+            "Jackson Heights-East Elmhurst (CD 3)": {
+                "value": "22 036",
+                "percent": "13.8"
+            },
+            "Elmhurst-Corona (CD 4)": {
+                "value": "24 366",
+                "percent": "13.9"
+            },
+            "Ridgewood-Maspeth-Middle Village (CD 5)": {
+                "value": "18 891",
+                "percent": "9.9"
+            },
+            "Forest Hills-Rego Park (CD 6)": {
+                "value": "10 006",
+                "percent": "8.2"
+            },
+            "Flushing-Murray Hill-Whitestone (CD 7)": {
+                "value": "35 685",
+                "percent": "14.3"
+            },
+            "Fresh Meadows-Hillcrest-Briarwood (CD 8)": {
+                "value": "18 864",
+                "percent": "12.2"
+            },
+            "Kew Gardens-Richmond Hill-Woodhaven (CD 9)": {
+                "value": "16 779",
+                "percent": "11.1"
+            },
+            "South Ozone Park-Howard Beach (CD 10)": {
+                "value": "13 822",
+                "percent": "9.7"
+            },
+            "Auburndale-Bayside-Douglaston (CD 11)": {
+                "value": "10 278",
+                "percent": "8.2"
+            },
+            "Jamaica-St. Albans-Hollis (CD 12)": {
+                "value": "29 988",
+                "percent": "11.6"
+            },
+            "Queens Village-Bellerose-Rosedale (CD 13)": {
+                "value": "15 538",
+                "percent": "7.4"
+            },
+            "The Rockaways (CD 14)": {
+                "value": "23 622",
+                "percent": "18"
+            }
+        },
+        "Statan Island-distr": {
+            "North Shore (CD 1)": {
+                "value": "25 657",
+                "percent": "14.5"
+            },
+            "Mid-Island (CD 2)": {
+                "value": "14 428",
+                "percent": "10.2"
+            },
+            "South Shore (CD 3)": {
+                "value": "10 151",
+                "percent": "6"
+            }
+        }
+},
+    "": {
+        "New York City": {
+            "value": "1 457 389",
+            "percent": "17"
+        }
     }
 }

@@ -1,0 +1,393 @@
+
+<html>
+<head>
+  <title>Data Journalism</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  {%include 'navbar.html'%}
+ 
+  <h1> Poverty Rates In {{borough_type}} By Community District</h1>
+  
+  <div id="districts">
+    {% include 'NYC_community_districts.svg' %}
+  </div>
+  <div>
+    <h2>Findings</h2>
+    <p>
+      In New York City, community district-level data reveals pronounced variations in poverty rates, highlighting the most economically challenged areas within each borough. 
+      In the Bronx, the Melrose-Mott Haven-Port Morris district (Bronx district 1)stands out with the highest poverty rate of {{requestedData["Melrose-Mott Haven-Port Morris (CD 1)"][0]}}%, indicating a severe economic strain. 
+      Brooklyn's Ocean Hill-Brownsville district (Brooklyn district 16) follows closely with a {{ requestedData["Ocean Hill-Brownsville (CD 16)"][0] }}% poverty rate, underscoring substantial hardship. 
+      Manhattan presents a contrasting scenario where East Harlem (district 11) leads with a   {{ requestedData["East Harlem (CD 11)"][0] }}% rate, showcasing significant challenges despite the borough's overall wealth. 
+      Queens shows a more moderate peak, with Flushing-Murray Hill-Whitestone (district 7) at {{ requestedData["Flushing-Murray Hill-Whitestone (CD 7)"][0] }}%, while Staten Island's North Shore (distirct 1) is the most affected within the borough with a rate of {{ requestedData["North Shore (CD 1)"][0] }}%. 
+      These figures reflect the stark economic disparities that exist within short geographical distances, emphasizing the need for nuanced, localized interventions to address poverty in New York City.
+     </p> 
+    </div>
+    <div>
+      <h2>Three Takeaways</h2>
+      <ol>
+        <li><strong>Diverse Poverty Rates Across Districts:</strong> The data reveals a stark contrast in poverty rates between different community districts within the same boroughs, showcasing the economic diversity and inequality within short geographical distances. For example, community districts like Melrose-Mott Haven-Port Morris in the Bronx exhibit drastically higher poverty rates compared to other districts like Riverdale-Kingsbridge-Marble Hill, underscoring the localized nature of economic challenges.</li>
+        <li><strong>Insights for Targeted Interventions:</strong> The granularity of the data provides valuable insights for governmental and non-governmental organizations to design targeted interventions. By identifying specific districts with higher poverty rates, efforts can be concentrated more effectively to address poverty, educational needs, healthcare access, and employment opportunities in those areas.</li>
+        <li><strong>Importance of Localized Data in Urban Planning:</strong> The investigation highlights the critical role of detailed, localized data in urban planning and policy-making. Such data enables a more nuanced understanding of urban challenges and is essential for crafting policies that address the specific needs of diverse populations within a city. This approach can lead to more equitable and effective governance and resource allocation.</li>
+    </ol>
+    
+    </div>
+  <style>
+     body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            background-color: #a3a2a2;
+            color: #000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 6px;
+        }
+        h3 {
+            color: #555;
+            padding-left: 20px;
+        }
+        ul {
+            margin: 10px 20px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 20px;
+        }
+  </style>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+      
+  document.addEventListener("DOMContentLoaded", function() {
+     bronx1Color = "hsl(11, 90%,  {{ requestedData["Melrose-Mott Haven-Port Morris (CD 1)"][1] }}%)";
+     bronx2Color = "hsl(11, 90%,  {{ requestedData["Longwood-Hunts Point (CD 2)"][1] }}%)";
+     bronx3Color = "hsl(11, 90%,  {{ requestedData["Morrisania-Crotona Park East (CD 3)"][1] }}%)";
+     bronx4Color = "hsl(11, 90%,  {{ requestedData["Highbridge-Concourse (CD 4)"][1] }}%)";
+     bronx5Color = "hsl(11, 90%,  {{ requestedData["Morris Heights-Mount Hope (CD 5)"][1] }}%)";
+     bronx6Color = "hsl(11, 90%,  {{ requestedData["Tremont-Belmont-West Farms (CD 6)"][1] }}%)";
+     bronx7Color = "hsl(11, 90%,  {{ requestedData["Fordham-Bedford Park-Norwood (CD 7)"][1] }}%)";
+     bronx8Color = "hsl(11, 90%,  {{ requestedData["Riverdale-Kingsbridge-Marble Hill (CD 8)"][1] }}%)";
+     bronx9Color = "hsl(11, 90%,  {{ requestedData["Soundview-Parkchester (CD 9)"][1] }}%)";
+     bronx10Color = "hsl(11, 90%,  {{ requestedData["Co-op City-Throgs Neck (CD 10)"][1] }}%)";
+     bronx11Color = "hsl(11, 90%,  {{ requestedData["Pelham Parkway-Morris Park (CD 11)"][1] }}%)";
+     bronx12Color = "hsl(11, 90%,  {{ requestedData["Wakefield-Williamsbridge-Eastchester (CD 12)"][1] }}%)";
+
+
+     bronx1 = document.getElementsByClassName("Bronx_1");
+     bronx2 = document.getElementsByClassName("Bronx_2");
+     bronx3 = document.getElementsByClassName("Bronx_3");
+     bronx4 = document.getElementsByClassName("Bronx_4");
+     bronx5 = document.getElementsByClassName("Bronx_5");
+     bronx6 = document.getElementsByClassName("Bronx_6");
+     bronx7 = document.getElementsByClassName("Bronx_7");
+     bronx8 = document.getElementsByClassName("Bronx_8");
+     bronx9 = document.getElementsByClassName("Bronx_9");
+     bronx10 = document.getElementsByClassName("Bronx_10");
+     bronx11 = document.getElementsByClassName("Bronx_11");
+     bronx12 = document.getElementsByClassName("Bronx_12");    
+     
+
+    for (let i = 0; i < bronx1.length; i++) {
+      bronx1[i].style.fill = bronx1Color;
+    }
+    for (let i = 0; i < bronx2.length; i++) {
+      bronx2[i].style.fill = bronx2Color;
+    }
+    for (let i = 0; i < bronx3.length; i++) {
+      bronx3[i].style.fill = bronx3Color;
+    }
+    for (let i = 0; i < bronx4.length; i++) {
+      bronx4[i].style.fill = bronx4Color;
+    }
+    for (let i = 0; i < bronx5.length; i++) {
+      bronx5[i].style.fill = bronx5Color;
+    }
+    for (let i = 0; i < bronx6.length; i++) {
+      bronx6[i].style.fill = bronx6Color;
+    }
+    for (let i = 0; i < bronx7.length; i++) {
+      bronx7[i].style.fill = bronx7Color;
+    }
+    for (let i = 0; i < bronx7.length; i++) {
+      bronx7[i].style.fill = bronx7Color;
+    }
+    for (let i = 0; i < bronx8.length; i++) {
+      bronx8[i].style.fill = bronx8Color;
+    }
+    for (let i = 0; i < bronx9.length; i++) {
+      bronx9[i].style.fill = bronx9Color;
+    }
+    for (let i = 0; i < bronx10.length; i++) {
+      bronx10[i].style.fill = bronx10Color;
+    }
+    for (let i = 0; i < bronx11.length; i++) {
+      bronx11[i].style.fill = bronx11Color;
+    }
+    for (let i = 0; i < bronx12.length; i++) {
+      bronx12[i].style.fill = bronx12Color;
+    }
+   
+ 
+    brook1Color = "hsl(11, 90%,  {{ requestedData["Williamsburg-Greenpoint (CD 1)"][1] }}%)";
+    brook2Color = "hsl(11, 90%,  {{ requestedData["Downtown Brooklyn-Fort Greene (CD 2)"][1] }}%)";
+    brook3Color = "hsl(11, 90%,  {{ requestedData["Bedford-Stuyvesant (CD 3)"][1] }}%)";
+    brook4Color = "hsl(11, 90%,  {{ requestedData["Bushwick (CD 4)"][1] }}%)";
+    brook5Color = "hsl(11, 90%,  {{ requestedData["East New York-Cypress Hills (CD 5)"][1] }}%)";
+    brook6Color = "hsl(11, 90%,  {{ requestedData["Park Slope-Carroll Gardens (CD 6)"][1] }}%)";
+    brook7Color = "hsl(11, 90%,  {{ requestedData["Sunset Park-Windsor Terrace (CD 7)"][1] }}%)";
+    brook8Color = "hsl(11, 90%,  {{ requestedData["Crown Heights (North) (CD 8)"][1] }}%)";
+    brook9Color = "hsl(11, 90%,  {{ requestedData["Crown Heights (South) (CD 9)"][1] }}%)";
+    brook10Color = "hsl(11, 90%,  {{ requestedData["Bay Ridge-Dyker Heights (CD 10)"][1] }}%)";
+    brook11Color = "hsl(11, 90%,  {{ requestedData["Bensonhurst-Bath Beach (CD 11)"][1] }}%)";
+    brook12Color = "hsl(11, 90%,  {{ requestedData["Borough Park-Kensington (CD 12)"][1] }}%)";
+    brook13Color = "hsl(11, 90%,  {{ requestedData["Coney Island-Brighton Beach (CD 13)"][1] }}%)";
+    brook14Color = "hsl(11, 90%,  {{ requestedData["Flatbush-Midwood (CD 14)"][1] }}%)";
+    brook15Color = "hsl(11, 90%,  {{ requestedData["Sheepshead Bay-Gravesend (East) (CD 15)"][1] }}%)";
+    brook16Color = "hsl(11, 90%,  {{ requestedData["Ocean Hill-Brownsville (CD 16)"][1] }}%)";
+    brook17Color = "hsl(11, 90%,  {{ requestedData["East Flatbush (CD 17)"][1] }}%)";
+    brook18Color = "hsl(11, 90%,  {{ requestedData["Canarsie-Flatlands (CD 18)"][1] }}%)";
+     
+    brook1 = document.getElementsByClassName("Brook_1");
+    brook2 = document.getElementsByClassName("Brook_2");
+    brook3 = document.getElementsByClassName("Brook_3");
+    brook4 = document.getElementsByClassName("Brook_4");
+    brook5 = document.getElementsByClassName("Brook_5");
+    brook6 = document.getElementsByClassName("Brook_6");
+    brook7 = document.getElementsByClassName("Brook_7");
+    brook8 = document.getElementsByClassName("Brook_8");
+    brook9 = document.getElementsByClassName("Brook_9");
+    brook10 = document.getElementsByClassName("Brook_10");
+    brook11 = document.getElementsByClassName("Brook_11");
+    brook12 = document.getElementsByClassName("Brook_12");
+    brook13 = document.getElementsByClassName("Brook_13");
+    brook14 = document.getElementsByClassName("Brook_14");
+    brook15 = document.getElementsByClassName("Brook_15");
+    brook16 = document.getElementsByClassName("Brook_16");
+    brook17 = document.getElementsByClassName("Brook_17");
+    brook18 = document.getElementsByClassName("Brook_18");
+
+    for (let i = 0; i < brook1.length; i++) {
+      brook1[i].style.fill = brook1Color;
+    }
+    for (let i = 0; i < brook2.length; i++) {
+      brook2[i].style.fill = brook2Color;
+    }
+    for (let i = 0; i < brook3.length; i++) {
+      brook3[i].style.fill = brook3Color;
+    }
+    for (let i = 0; i < brook4.length; i++) {
+      brook4[i].style.fill = brook4Color;
+    }
+    for (let i = 0; i < brook5.length; i++) {
+      brook5[i].style.fill = brook5Color;
+    }
+    for (let i = 0; i < brook6.length; i++) {
+      brook6[i].style.fill = brook6Color;
+    }
+    for (let i = 0; i < brook7.length; i++) {
+      brook7[i].style.fill = brook7Color;
+    }
+    for (let i = 0; i < brook8.length; i++) {
+      brook8[i].style.fill = brook8Color;
+    }
+    for (let i = 0; i < brook9.length; i++) {
+      brook9[i].style.fill = brook9Color;
+    }
+    for (let i = 0; i < brook10.length; i++) {
+      brook10[i].style.fill = brook10Color;
+    }
+    for (let i = 0; i < brook11.length; i++) {
+      brook11[i].style.fill = brook11Color;
+    }
+    for (let i = 0; i < brook12.length; i++) {
+      brook12[i].style.fill = brook12Color;
+    }
+    for (let i = 0; i < brook13.length; i++) {
+      brook13[i].style.fill = brook13Color;
+    }
+    for (let i = 0; i < brook14.length; i++) {
+      brook14[i].style.fill = brook14Color;
+    }
+    for (let i = 0; i < brook15.length; i++) {
+      brook15[i].style.fill = brook15Color;
+    }
+    for (let i = 0; i < brook16.length; i++) {
+      brook16[i].style.fill = brook16Color;
+    }
+    for (let i = 0; i < brook17.length; i++) {
+      brook17[i].style.fill = brook17Color;
+    }
+    for (let i = 0; i < brook18.length; i++) {
+      brook18[i].style.fill = brook18Color;
+    }
+   
+    man1Color = "hsl(11, 90%,  {{ requestedData["Financial District-Tribeca (CD 1)"][1] }}%)";
+    man2Color = "hsl(11, 90%,  {{ requestedData["Greenwich Village-SoHo (CD 2)"][1] }}%)";
+    man3Color = "hsl(11, 90%,  {{ requestedData["Lower East Side-Chinatown (CD 3)"][1] }}%)";
+    man4Color = "hsl(11, 90%,  {{ requestedData["Chelsea-Hell's Kitchen (CD 4)"][1] }}%)";
+    man5Color = "hsl(11, 90%,  {{ requestedData["Midtown-Flatiron-Union Square (CD 5)"][1] }}%)";
+    man6Color = "hsl(11, 90%,  {{ requestedData["East Midtown-Murray Hill (CD 6)"][1] }}%)";
+    man7Color = "hsl(11, 90%,  {{ requestedData["Upper West Side (CD 7)"][1] }}%)";
+    man8Color = "hsl(11, 90%,  {{ requestedData["Upper East Side-Roosevelt Island (CD 8)"][1] }}%)";
+    man9Color = "hsl(11, 90%,  {{ requestedData["Morningside Heights-Hamilton Heights (CD 9)"][1] }}%)";
+    man10Color = "hsl(11, 90%,  {{ requestedData["Harlem (CD 10)"][1] }}%)";
+    man11Color = "hsl(11, 90%,  {{ requestedData["East Harlem (CD 11)"][1] }}%)";
+    man12Color = "hsl(11, 90%,  {{ requestedData["Washington Heights-Inwood (CD 12)"][1] }}%)";
+
+    man1 = document.getElementsByClassName("Manhat_1");
+    man2 = document.getElementsByClassName("Manhat_2");
+    man3 = document.getElementsByClassName("Manhat_3");
+    man4 = document.getElementsByClassName("Manhat_4");
+    man5 = document.getElementsByClassName("Manhat_5");
+    man6 = document.getElementsByClassName("Manhat_6");
+    man7 = document.getElementsByClassName("Manhat_7");
+    man8 = document.getElementsByClassName("Manhat_8");
+    man9 = document.getElementsByClassName("Manhat_9");
+    man10 = document.getElementsByClassName("Manhat_10");
+    man11 = document.getElementsByClassName("Manhat_11");
+    man12 = document.getElementsByClassName("Manhat_12");
+
+    for (let i = 0; i < man1.length; i++) {
+      man1[i].style.fill = man1Color;
+    }
+    for (let i = 0; i < man2.length; i++) {
+      man2[i].style.fill = man2Color;
+    }
+    for (let i = 0; i < man3.length; i++) {
+      man3[i].style.fill = man3Color;
+    }
+    for (let i = 0; i < man4.length; i++) {
+      man4[i].style.fill = man4Color;
+    }
+    for (let i = 0; i < man5.length; i++) {
+      man5[i].style.fill = man5Color;
+    }
+    for (let i = 0; i < man6.length; i++) {
+      man6[i].style.fill = man6Color;
+    }
+    for (let i = 0; i < man7.length; i++) {
+      man7[i].style.fill = man7Color;
+    }
+    for (let i = 0; i < man8.length; i++) {
+      man8[i].style.fill = man8Color;
+    }
+    for (let i = 0; i < man9.length; i++) {
+      man9[i].style.fill = man9Color;
+    }
+    for (let i = 0; i < man10.length; i++) {
+      man10[i].style.fill = man10Color;
+    }
+    for (let i = 0; i < man11.length; i++) {
+      man11[i].style.fill = man11Color;
+    }
+    for (let i = 0; i < man12.length; i++) {
+      man12[i].style.fill = man12Color;
+    }
+
+    queens1Color = "hsl(11, 90%,  {{ requestedData["Astoria-Queensbridge (CD 1)"][1] }}%)";
+    queens2Color = "hsl(11, 90%,  {{ requestedData["Long Island City-Sunnyside-Woodside (CD 2)"][1] }}%)";
+    queens3Color = "hsl(11, 90%,  {{ requestedData["Jackson Heights-East Elmhurst (CD 3)"][1] }}%)";
+    queens4Color = "hsl(11, 90%,  {{ requestedData["Elmhurst-Corona (CD 4)"][1] }}%)";
+    queens5Color = "hsl(11, 90%,  {{ requestedData["Ridgewood-Maspeth-Middle Village (CD 5)"][1] }}%)";
+    queens6Color = "hsl(11, 90%,  {{ requestedData["Forest Hills-Rego Park (CD 6)"][1] }}%)";
+    queens7Color = "hsl(11, 90%,  {{ requestedData["Flushing-Murray Hill-Whitestone (CD 7)"][1] }}%)";
+    queens8Color = "hsl(11, 90%,  {{ requestedData["Fresh Meadows-Hillcrest-Briarwood (CD 8)"][1] }}%)";
+    queens9Color = "hsl(11, 90%,  {{ requestedData["Kew Gardens-Richmond Hill-Woodhaven (CD 9)"][1] }}%)";
+    queens10Color = "hsl(11, 90%,  {{ requestedData["South Ozone Park-Howard Beach (CD 10)"][1] }}%)";
+    queens11Color = "hsl(11, 90%,  {{ requestedData["Auburndale-Bayside-Douglaston (CD 11)"][1] }}%)";
+    queens12Color = "hsl(11, 90%,  {{ requestedData["Jamaica-St. Albans-Hollis (CD 12)"][1] }}%)";
+    queens13Color = "hsl(11, 90%,  {{ requestedData["Queens Village-Bellerose-Rosedale (CD 13)"][1] }}%)";
+    queens14Color = "hsl(11, 90%,  {{ requestedData["The Rockaways (CD 14)"][1] }}%)";
+    
+    queens1 = document.getElementsByClassName("Queens_1");
+    queens2 = document.getElementsByClassName("Queens_2");
+    queens3 = document.getElementsByClassName("Queens_3");
+    queens4 = document.getElementsByClassName("Queens_4");
+    queens5 = document.getElementsByClassName("Queens_5");
+    queens6 = document.getElementsByClassName("Queens_6");
+    queens7 = document.getElementsByClassName("Queens_7");
+    queens8 = document.getElementsByClassName("Queens_8");
+    queens9 = document.getElementsByClassName("Queens_9");
+    queens10 = document.getElementsByClassName("Queens_10");
+    queens11 = document.getElementsByClassName("Queens_11");
+    queens12 = document.getElementsByClassName("Queens_12");
+    queens13 = document.getElementsByClassName("Queens_13");
+    queens14 = document.getElementsByClassName("Queens_14");
+
+    for (let i = 0; i < queens1.length; i++) {
+      queens1[i].style.fill = queens1Color;
+    }
+    for (let i = 0; i < queens2.length; i++) {
+      queens2[i].style.fill = queens2Color;
+    }
+    for (let i = 0; i < queens3.length; i++) {
+      queens3[i].style.fill = queens3Color;
+    }
+    for (let i = 0; i < queens4.length; i++) {
+      queens4[i].style.fill = queens4Color;
+    }
+    for (let i = 0; i < queens5.length; i++) {
+      queens5[i].style.fill = queens5Color;
+    }
+    for (let i = 0; i < queens6.length; i++) {
+      queens6[i].style.fill = queens6Color;
+    }
+    for (let i = 0; i < queens7.length; i++) {
+      queens7[i].style.fill = queens7Color;
+    }
+    for (let i = 0; i < queens8.length; i++) {
+      queens8[i].style.fill = queens8Color;
+    }
+    for (let i = 0; i < queens9.length; i++) {
+      queens9[i].style.fill = queens9Color;
+    }
+    for (let i = 0; i < queens10.length; i++) {
+      queens10[i].style.fill = queens10Color;
+    }
+    for (let i = 0; i < queens11.length; i++) {
+      queens11[i].style.fill = queens11Color;
+    }
+    for (let i = 0; i < queens12.length; i++) {
+      queens12[i].style.fill = queens12Color;
+    }
+    for (let i = 0; i < queens13.length; i++) {
+      queens13[i].style.fill = queens13Color;
+    }
+    for (let i = 0; i < queens14.length; i++) {
+      queens14[i].style.fill = queens14Color;
+    }
+    stat1Color = "hsl(11, 90%,  {{ requestedData["North Shore (CD 1)"][1] }}%)";
+    stat2Color = "hsl(11, 90%,  {{ requestedData["Mid-Island (CD 2)"][1] }}%)";
+    stat3Color = "hsl(11, 90%,  {{ requestedData["South Shore (CD 3)"][1] }}%)";
+    
+    stat1 = document.getElementsByClassName("StatanIsland_1");
+    stat2 = document.getElementsByClassName("StatanIsland_2");
+    stat3 = document.getElementsByClassName("StatanIsland_3");
+
+    for (let i = 0; i < stat1.length; i++) {
+      stat1[i].style.fill = stat1Color;
+    }
+    for (let i = 0; i < stat2.length; i++) {
+      stat2[i].style.fill = stat2Color;
+    }
+    for (let i = 0; i < stat3.length; i++) {
+      stat3[i].style.fill = stat3Color;
+    }
+  });
+  </script>
+   {% include 'footer.html' %}
+</body>
+</html>

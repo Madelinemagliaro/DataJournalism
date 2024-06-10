@@ -1,22 +1,22 @@
 {
     "borough": {
-        "Bronx": {
+        "The Bronx": {
             "value": "379 954",
             "percent": "26.5"
         },
         "Brooklyn": {
             "value": "504 813",
-            "percent": "18.8"
+            "percent": "18.8" 
         },
         "Manhattan": {
             "value": "252 233",
-            "percent": "15.6"
+            "percent": "15.6" 
         },
         "Queens": {
             "value": "270 107",
             "percent": "11.4"
         },
-        "Staten Island": {
+        "Staten_Island": {
             "value": "50 282",
             "percent": "10.3"
         }
@@ -70,7 +70,12 @@
             "Wakefield-Williamsbridge-Eastchester (CD 12)": {
                 "value": "28 887",
                 "percent": "17.3"
+            },
+            "Highest_poverty":{
+                "CD": "Melrose-Mott Haven-Port Morris (CD 1)",
+                "percent": "39.5"
             }
+
         },
         "Brooklyn-distr": {
             "Williamsburg-Greenpoint (CD 1)": {
@@ -144,6 +149,10 @@
             "Canarsie-Flatlands (CD 18)": {
                 "value": "21 528",
                 "percent": "10.4"
+            },
+            "Highest_poverty":{
+                "CD": "Borough Park-Kensington (CD 12)",
+                "percent": "26.3"
             }
         },
         "Manhattan-distr": {
@@ -194,6 +203,10 @@
             "Washington Heights-Inwood (CD 12)": {
                 "value": "34 752",
                 "percent": "16.9"
+            },
+            "Highest_poverty":{
+                "CD": "East Harlem (CD 11)",
+                "percent": "30.7"
             }
         },
         "Queens-distr": {
@@ -252,6 +265,10 @@
             "The Rockaways (CD 14)": {
                 "value": "23 622",
                 "percent": "18"
+            },
+            "Highest_poverty":{
+                "CD": "Flushing-Murray Hill-Whitestone (CD 7)",
+                "percent": "14.3"
             }
         },
         "Statan Island-distr": {
@@ -266,6 +283,10 @@
             "South Shore (CD 3)": {
                 "value": "10 151",
                 "percent": "6"
+            },
+            "Highest_poverty":{
+                "CD": "North Shore (CD 1)",
+                "percent": "14.5"
             }
         }
 },

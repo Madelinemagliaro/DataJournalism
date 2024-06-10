@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Data Journalism</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ {%include 'navbar.html'%}
+ 
+  <h1>Data Journalism </h1>
+  <h1>Understanding Poverty in NYC</h1>
+  <p>This project presents two interactive maps outlining poverty rates across New York City, one by borough and the other by community district. I aim to transform complex socioeconomic data into a visually intuitive format that anyone can understand quickly and clearly.</p>
+  <h2>Data Pipeline</h2>
+  <ol>
+    <li><strong>Data Acquisition:</strong> I acquired data from New York City's Environmental and Health Data Portal and exported it to a spreadsheet that included detailed poverty statistics across NYC boroughs and their respective community districts.</li>
+    <li><strong>Data Parsing:</strong> Once I had the data, I parsed the spreadsheet content to extract crucial information. This step was essential to structuring the data so that borough-level and district-level details could be accessed.</li>
+    <li><strong>Data Cleaning:</strong> The numeric values for poverty statistics were initially formatted as strings with commas, such as "379,954". I cleaned these strings by removing any non-numeric characters and converting them to integers or floats, preparing them for analysis.</li>
+    <li><strong>Data Transformation:</strong> I transformed the cleaned data into my JSON to facilitate easier manipulation and analysis. This conversion simplified the following analytical tasks.</li>
+    <li><strong>Data Visualization:</strong> To better understand and communicate the distribution of poverty, I visualized the data using different graphical representations. This included creating heat maps that depicted poverty rates by boroughs and districts.</li>
+    <li><strong>Reporting:</strong> After analyzing and visualizing the data, I compiled the findings into a comprehensive report. This report highlighted critical areas of need and provided insights into the patterns of poverty, serving as a valuable tool for policymakers.</li>
+</ol>
+
+  <h2>Key Vocabulary</h2>
+  <ul>
+      <li><strong>Poverty Rate:</strong> The percentage of the population whose income falls below the poverty threshold, as defined by federal standards.</li>
+      <li><strong>Community District:</strong> A local administrative subdivision of each borough. New York City is divided into 59 geographic Community Districts, each with a respective Community Board.</li>
+  </ul>
+
+  <h2>Prototyping Process</h2>
+  <h3>Prototype 1: Borough-Level Map</h3>
+  <ul>
+      <li><strong>Objective:</strong> To provide a macro view of poverty in NYC.</li>
+      <li><strong>Design:</strong> Utilized a simple choropleth map with varying shades of green.</li>
+      <li><strong>Feedback:</strong> Classmates found the green color misleading, associating it with positive attributes rather than poverty.</li>
+      <li><strong>Takeaway:</strong> Color choice is crucial in conveying the correct message.</li>
+  </ul>
+
+  <h3>Prototype 2: Community District Map</h3>
+  <ul>
+      <li><strong>Objective:</strong> To offer a detailed view of poverty rates, enabling comparisons at a micro level.</li>
+      <li><strong>Design:</strong> Continued with a similar shade approach but added a zoomed-in version through community districts.</li>
+      <li><strong>Feedback:</strong> The detailed breakdown was well-received; however, the consistency in color coding needed to be aligned with the borough map.</li>
+      <li><strong>Takeaway:</strong> Ensuring consistency across multiple visualizations aids in comprehension and user experience.</li>
+  </ul>
+
+  <h2>Final Design and Rationale</h2>
+  <p>The final designs of both maps adopted a color scheme based on shades of orange, a shift from the original green to avoid positive connotations associated with green. This change was based on user feedback and the psychological impact of colors:</p>
+  <ul>
+      <li><strong>Orange Shades:</strong> Selected to draw attention and indicate urgency, reflecting the seriousness of poverty.</li>
+      <li><strong>Simplicity and Clarity:</strong> Both maps prioritize easy interpretation by using a consistent color scale and clear, uncluttered presentation.</li>
+      <li><strong>Data Storytelling:</strong> The choice of colors, scale, and interactivity turn a complex array of numbers into a narrative that highlights areas of need and focuses public and policy attention on them. Additionally, the legends provide quantitative numbers to complement the qualitative maps.</li>
+  </ul>
+
+  <h2>Photographic Documentation</h2>
+  <div>
+    <img src="prototype2.jpeg" alt="Map of Poverty Rates by Borough" width="400" height="300">
+    <img src="prototype1.jpeg" alt="Map of Poverty Rates by Community Districts" width="400" height="300">
+   
+  </div>
+  
+
+
+  
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  {% include 'footer.html' %}
+</body> 
+</html>
